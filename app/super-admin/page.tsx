@@ -1,5 +1,5 @@
-import { prisma } from "../lib/prisma";
-import AddToCartButton from "./components/AddToCartButton";
+import { prisma } from "../../lib/prisma";
+import AddToCartButton from ".././components/AddToCartButton";
 
 export default async function Home() {
   const foods = await prisma.food.findMany({
